@@ -3,8 +3,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
+    <div className="d-flex justify-content-center">
+      <h1 className="text-primary">hello world</h1>
     </div>
   );
 }
