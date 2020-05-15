@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class BirdAPITest extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <p>table with response from API call should be formated like:</p>
         <table className="table">
         <tr className="text-center">
