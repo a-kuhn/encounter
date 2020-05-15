@@ -5,14 +5,14 @@ const SearchForm = (props) => {
   const [searchInputState, setSearchInputState] = useState("");
 
   return (
-    <div className="container">
-      <form onSubmit={}>
+    <div className="container mt-5">
+      <form className="form">
         <input
           onChange={(e) => setSearchInputState(e.target.value)}
           type="text"
-          className=""
+          className="px-2 mx-2"
         ></input>
-        <button className="">Search</button>
+        <button className="btn btn-success font-weight-bold">Search</button>
       </form>
     </div>
   );
