@@ -53,6 +53,7 @@ const SearchForm = (props) => {
               <legend className="w-auto">season</legend>
               <div class="form-check text-center">
                 <input
+                  onChange={(e) => setSearchSeason(e.target.value)}
                   class="form-check-input"
                   type="radio"
                   name="thisSeason"
@@ -68,6 +69,7 @@ const SearchForm = (props) => {
                 <div className="form-group col-md-6">
                   <div class="form-check">
                     <input
+                      onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
                       name="springSeason"
@@ -80,6 +82,7 @@ const SearchForm = (props) => {
                   </div>
                   <div class="form-check">
                     <input
+                      onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
                       name="summerSeason"
@@ -94,6 +97,7 @@ const SearchForm = (props) => {
                 <div className="form-group col-md-6">
                   <div class="form-check">
                     <input
+                      onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
                       name="winterSeason"
@@ -106,6 +110,7 @@ const SearchForm = (props) => {
                   </div>
                   <div class="form-check">
                     <input
+                      onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
                       name="fallSeason"
