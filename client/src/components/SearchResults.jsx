@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class SearchResults extends Component {
-  render() {
+function SearchResults() {
     return (
       <div className="container outline">
         <p className="">table with response from API call should be formated like:
@@ -26,6 +25,5 @@ class SearchResults extends Component {
       </div>
     );
   }
-}
 
 export default SearchResults;
