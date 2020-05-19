@@ -32,14 +32,14 @@ const SearchForm = (props) => {
                 onChange={(e) => setSearchLocation(e.target.value)}
                 value={searchLocation}
                 type="text"
-                className="px-2 m-2 form-control"
+                className="px-2 mt-2 mx-auto form-control"
                 placeholder="birding location (park, campus, riverside, etc.)"
               ></input>
               <input
                 onChange={(e) => setSearchMunicipality(e.target.value)}
                 value={searchMunicipality}
                 type="text"
-                className="px-2 m-2 form-control"
+                className="px-2 mt-2 mx-auto form-control"
                 placeholder="municipality"
               ></input>
               <div className="form-row">
@@ -48,7 +48,7 @@ const SearchForm = (props) => {
                     onChange={(e) => setSearchCounty(e.target.value)}
                     value={searchCounty}
                     type="text"
-                    className="px-2 m-2 form-control"
+                    className="px-2 mt-2 mx-auto form-control"
                     placeholder="county"
                   ></input>
                 </div>
@@ -57,7 +57,7 @@ const SearchForm = (props) => {
                     onChange={(e) => setSearchState(e.target.value)}
                     value={searchState}
                     type="text"
-                    className="px-2 m-2 form-control"
+                    className="px-2 mt-2 mx-auto form-control"
                     placeholder="state"
                   ></input>
                 </div>
@@ -147,7 +147,7 @@ const SearchForm = (props) => {
                 onChange={(e) => setSearchSpecies(e.target.value)}
                 value={searchSpecies}
                 type="text"
-                className="px-2 m-2 form-control"
+                className="px-2 mt-2 mx-auto form-control"
                 placeholder="common or latin name will do!"
               ></input>
             </fieldset>
