@@ -1,18 +1,17 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import {Link, Redirect, Router} from "@reach/router";
 
-import BirdAPITest from './components/BirdAPITest';
-import Nav from './components/Nav';
-import SearchForm from './components/SearchForm';
+import NewChecklist from './Views/NewChecklist';
 
 function App() {
   return (
     <div className="container justify-content-center">
-      <SearchForm/>
 
-      <Nav/>
-      <BirdAPITest/>
+      <Router>
+        <NewChecklist path="/" />
+      </Router>
     </div>
   );
 }
