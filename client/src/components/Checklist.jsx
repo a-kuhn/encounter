@@ -22,7 +22,6 @@ function Checklist() {
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td>notes about bird spotting</td>
           <td>little red trash can --> link to delete row from checklist</td>
         </tr>
       </table>
