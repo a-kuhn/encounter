@@ -5,6 +5,7 @@ import {Link, Redirect, Router} from "@reach/router";
 
 import LoginReg from './Views/LoginReg';
 import NewChecklist from './Views/NewChecklist';
+import Encounters from './Views/Encounters';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <LoginReg path="/"/>
         <NewChecklist path="/encounters/new" />
+        <Encounters path="/encounters" />
       </Router>
     </div>
   );
