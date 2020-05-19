@@ -7,7 +7,7 @@ const Login = (props) => {
 
   const loginUser = (e) => {
     e.preventDefault();
-    const newSearch = {
+    const userToLogin = {
       email,
       password,
     };

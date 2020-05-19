@@ -10,7 +10,7 @@ const Register = (props) => {
 
   const createUser = (e) => {
     e.preventDefault();
-    const newSearch = {
+    const newUser = {
       firstName,
       lastName,
       email,
