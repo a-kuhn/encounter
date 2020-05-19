@@ -6,7 +6,8 @@ const SearchForm = (props) => {
   const [searchState, setSearchState] = useState("");
   const [searchCounty, setSearchCounty] = useState("");
   const [searchMunicipality, setSearchMunicipality] = useState("");
-  const [searchSpecies, setSearchSpecies] = useState("");
+  const [searchSpeciesLatin, setSearchSpeciesLatin] = useState("");
+  const [searchSpeciesCommon, setSearchSpeciesCommon] = useState("");
   const [searchSeason, setSearchSeason] = useState("");
 
   const createSearch = (e) => {
@@ -16,17 +17,18 @@ const SearchForm = (props) => {
       searchState,
       searchCounty,
       searchMunicipality,
-      searchSpecies,
+      searchSpeciesLatin,
+      searchSpeciesCommon,
       searchSeason,
     };
   };
 
   return (
-    <div className="container mt-5 outline">
+    <div className="container mt-5 ">
       <form onSubmit={createSearch} className="form">
         <div className="row">
-          <div className="col-6 d-flex align-items-stretch outline">
-            <fieldset className="border p-2 outline">
+          <div className="col-6 d-flex align-items-stretch ">
+            <fieldset className="border p-2 ">
               <legend className="w-auto">location</legend>
               <input
                 onChange={(e) => setSearchLocation(e.target.value)}
@@ -144,11 +146,18 @@ const SearchForm = (props) => {
               <legend className="w-auto">species</legend>
               <label className="px-2 mx-2">Enter a name:</label>
               <input
-                onChange={(e) => setSearchSpecies(e.target.value)}
-                value={searchSpecies}
+                onChange={(e) => setSearchSpeciesLatin(e.target.value)}
+                value={searchSpeciesLatin}
                 type="text"
                 className="px-2 mt-2 mx-auto form-control"
-                placeholder="common or latin name will do!"
+                placeholder="enter latin name here..."
+              ></input>
+              <input
+                onChange={(e) => setSearchSpeciesCommon(e.target.value)}
+                value={searchSpeciesCommon}
+                type="text"
+                className="px-2 mt-2 mx-auto form-control"
+                placeholder="or common name here!"
               ></input>
             </fieldset>
           </div>
