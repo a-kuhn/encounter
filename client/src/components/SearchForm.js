@@ -9,21 +9,35 @@ const SearchForm = (props) => {
   const [searchSpecies, setSearchSpecies] = useState("");
   const [searchSeason, setSearchSeason] = useState("");
 
+  const createSearch = (e) => {
+    e.preventDefault();
+    const newSearch = {
+      searchLocation,
+      searchState,
+      searchCounty,
+      searchMunicipality,
+      searchSpecies,
+      searchSeason,
+    };
+  };
+
   return (
     <div className="container mt-5 outline">
-      <form className="form">
+      <form onSubmit={createSearch} className="form">
         <div className="row">
           <div className="col-6 d-flex align-items-stretch outline">
             <fieldset className="border p-2 outline">
               <legend className="w-auto">location</legend>
               <input
                 onChange={(e) => setSearchLocation(e.target.value)}
+                value={searchLocation}
                 type="text"
                 className="px-2 m-2 form-control"
                 placeholder="birding location (park, campus, riverside, etc.)"
               ></input>
               <input
                 onChange={(e) => setSearchMunicipality(e.target.value)}
+                value={searchMunicipality}
                 type="text"
                 className="px-2 m-2 form-control"
                 placeholder="municipality"
@@ -32,6 +46,7 @@ const SearchForm = (props) => {
                 <div className="form-group col-md-6">
                   <input
                     onChange={(e) => setSearchCounty(e.target.value)}
+                    value={searchCounty}
                     type="text"
                     className="px-2 m-2 form-control"
                     placeholder="county"
@@ -40,6 +55,7 @@ const SearchForm = (props) => {
                 <div className="form-group col-md-6">
                   <input
                     onChange={(e) => setSearchState(e.target.value)}
+                    value={searchState}
                     type="text"
                     className="px-2 m-2 form-control"
                     placeholder="state"
@@ -129,6 +145,7 @@ const SearchForm = (props) => {
               <label className="px-2 mx-2">Enter a name:</label>
               <input
                 onChange={(e) => setSearchSpecies(e.target.value)}
+                value={searchSpecies}
                 type="text"
                 className="px-2 m-2 form-control"
                 placeholder="common or latin name will do!"
