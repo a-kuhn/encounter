@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import {Link, Redirect, Router} from "@reach/router";
 
+import LoginReg from './Views/LoginReg';
 import NewChecklist from './Views/NewChecklist';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div className="container justify-content-center">
 
       <Router>
-        <NewChecklist path="/" />
+        <LoginReg path="/"/>
+        <NewChecklist path="/encounters/new" />
       </Router>
     </div>
   );

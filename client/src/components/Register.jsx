@@ -20,49 +20,54 @@ const Register = (props) => {
   };
 
   return (
-    <div className="container mt-5 outline">
+    <div className="d-inline-flex m-5">
       <form onSubmit={createUser} className="form">
-        <div className="row">
-          <div className="col-6">
-          <fieldset className="border p-2 outline">
-              <legend className="w-auto">register</legend>
-              <input
-                onChange={(e) => setFirstName(e.target.value)}
-                value={firstName}
-                type="text"
-                className="px-2 m-2 form-control"
-                placeholder="first name"
-              ></input>
-              <input
-                onChange={(e) => setSearchMunicipality(e.target.value)}
-                value={searchMunicipality}
-                type="text"
-                className="px-2 m-2 form-control"
-                placeholder="municipality"
-              ></input>
-              <div className="form-row">
-                <div className="form-group col-md-6">
-                  <input
-                    onChange={(e) => setSearchCounty(e.target.value)}
-                    value={searchCounty}
-                    type="text"
-                    className="px-2 m-2 form-control"
-                    placeholder="county"
-                  ></input>
-                </div>
-                <div className="form-group col-md-6">
-                  <input
-                    onChange={(e) => setSearchState(e.target.value)}
-                    value={searchState}
-                    type="text"
-                    className="px-2 m-2 form-control"
-                    placeholder="state"
-                  ></input>
-                </div>
-              </div>
-            </fieldset>
+        <fieldset className="border p-2 bg-light">
+          <legend className="w-auto">register</legend>
+          <input
+            onChange={(e) => setFirstName(e.target.value)}
+            value={firstName}
+            type="text"
+            className="px-2 mx-auto form-control"
+            placeholder="first name"
+          ></input>
+          <input
+            onChange={(e) => setLastName(e.target.value)}
+            value={lastName}
+            type="text"
+            className="px-2 mt-2 mx-auto form-control"
+            placeholder="last name"
+          ></input>
+          <div className="form-group">
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              type="email"
+              className="px-2 mt-2 mx-auto form-control"
+              placeholder="email"
+            ></input>
           </div>
-        </div>
+          <div className="form-row">
+            <div className="form-group col-md-6">
+              <input
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+                type="text"
+                className="px-2 mt-2 mx-auto form-control"
+                placeholder="password"
+              ></input>
+            </div>
+            <div className="form-group col-md-6">
+              <input
+                onChange={(e) => setPasswordConfirm(e.target.value)}
+                value={passwordConfirm}
+                type="text"
+                className="px-2 mt-2 mx-auto form-control"
+                placeholder="password confirm"
+              ></input>
+            </div>
+          </div>
+        </fieldset>
         <div className="justify-content-center row">
           <button className="btn btn-success font-weight-bold m-2">
             Register

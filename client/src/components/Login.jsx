@@ -14,29 +14,25 @@ const Login = (props) => {
   };
 
   return (
-    <div className="d-inline-flex mt-5 outline">
+    <div className="d-inline-flex m-5">
       <form onSubmit={loginUser} className="form">
-        <div className="row">
-          <div className="d-flex align-items-stretch outline">
-            <fieldset className="border p-2 outline">
+            <fieldset className="border p-2 bg-light">
               <legend className="w-auto">login</legend>
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 type="text"
-                className="px-2 m-2 form-control"
+                className="px-2 m-auto form-control"
                 placeholder="email address"
               ></input>
               <input
                 onChange={(e) => setPassword(e.target.value)}
-                value={Password}
+                value={password}
                 type="text"
-                className="px-2 m-2 form-control"
+                className="px-2 mt-2 mx-auto form-control"
                 placeholder="password"
               ></input>
             </fieldset>
-          </div>
-        </div>
         <div className="justify-content-center row">
           <button className="btn btn-success font-weight-bold m-2">
             Login
