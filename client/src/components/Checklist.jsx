@@ -3,10 +3,16 @@ import React from "react";
 function Checklist() {
   return (
     <div className="container outline">
-      <p className="h1">location</p>
-      <span>This checklist is __% complete</span>
-      <span className="mx-5 btn btn-sm btn-primary">button to save edits</span>
-      <p>location notes --> textfield input</p>
+      <div className="sticky-top bg-light">
+        <p className="h1">location</p>
+        <div className="row justify-content-between">
+          <span className="m-2 p-2">This checklist is __% complete</span>
+          <button className="mx-5 btn btn-sm btn-primary font-weight-bold">
+            SAVE UPDATES
+          </button>
+        </div>
+        <p className="">location notes --> textfield input</p>
+      </div>
       <table className="table">
         <tr className="text-center">
           <th>spotted?</th>
@@ -17,12 +23,139 @@ function Checklist() {
           <th>delete</th>
         </tr>
         <tr className="text-center">
-          <td>Y | N --> N=empty checkbox, Y=solid green checkmark</td>
+          <td>☑️ | ✅</td>
           <td>MM/DD/YYYY -->input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td>little red trash can --> link to delete row from checklist</td>
+          <td> 🗑️</td>
+        </tr>
+        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
+        </tr>        <tr className="text-center">
+          <td>☑️ | ✅</td>
+          <td>MM/DD/YYYY -->input box</td>
+          <td className="font-italic">Genus species</td>
+          <td>bird name</td>
+          <td>input text area</td>
+          <td> 🗑️</td>
         </tr>
       </table>
     </div>

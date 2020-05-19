@@ -6,10 +6,10 @@ import Checklist from "../components/Checklist";
 function SingleChecklist() {
   return (
     <>
-      <div>
+      <div className="">
           <Nav/>
       </div>
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="justify-content-center align-items-center">
         <Checklist />
       </div>
     </>
