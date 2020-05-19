@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class BirdAPITest extends Component {
+class SearchResults extends Component {
   render() {
     return (
       <div className="container outline">
@@ -28,4 +28,4 @@ class BirdAPITest extends Component {
   }
 }
 
-export default BirdAPITest;
+export default SearchResults;

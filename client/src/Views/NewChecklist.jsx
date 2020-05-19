@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import BirdAPITest from '../components/BirdAPITest';
+import SearchResults from '../components/SearchResults';
 import Nav from '../components/Nav';
 import SearchForm from '../components/SearchForm';
 
@@ -9,7 +9,7 @@ function NewChecklist() {
       <div className="container justify-content-center">
         <Nav/>
         <SearchForm/>
-        <BirdAPITest/>
+        <SearchResults/>
       </div>
     );
   }
