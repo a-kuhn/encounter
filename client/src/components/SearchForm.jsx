@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 
+// sample api request to iNaturalist
+// http://api.inaturalist.org/v1/observations?taxon_name=cardinal&d1=1970&d2=now&iconic_taxa=Aves&order=desc&order_by=observed_on
+/*
+taxon_name=searchTaxon
+d1=
+d2=
+iconic_taxa=
+per_page=
+order_by=
+*/
+
 const SearchForm = (props) => {
   //to keep track of what user is typing into search input
   const [searchLocation, setSearchLocation] = useState("");
   const [searchState, setSearchState] = useState("");
   const [searchCounty, setSearchCounty] = useState("");
   const [searchMunicipality, setSearchMunicipality] = useState("");
-  const [searchSpeciesLatin, setSearchSpeciesLatin] = useState("");
-  const [searchSpeciesCommon, setSearchSpeciesCommon] = useState("");
+  const [searchTaxon, setSearchTaxon] = useState("");
   const [searchSeason, setSearchSeason] = useState("");
 
   const createSearch = (e) => {
@@ -17,8 +27,7 @@ const SearchForm = (props) => {
       searchState,
       searchCounty,
       searchMunicipality,
-      searchSpeciesLatin,
-      searchSpeciesCommon,
+      searchTaxon,
       searchSeason,
     };
   };
@@ -146,18 +155,11 @@ const SearchForm = (props) => {
               <legend className="w-auto">species</legend>
               <label className="px-2 mx-2">Enter a name:</label>
               <input
-                onChange={(e) => setSearchSpeciesLatin(e.target.value)}
-                value={searchSpeciesLatin}
+                onChange={(e) => setSearchTaxon(e.target.value)}
+                value={searchTaxon}
                 type="text"
                 className="px-2 mt-2 mx-auto form-control"
-                placeholder="enter latin name here..."
-              ></input>
-              <input
-                onChange={(e) => setSearchSpeciesCommon(e.target.value)}
-                value={searchSpeciesCommon}
-                type="text"
-                className="px-2 mt-2 mx-auto form-control"
-                placeholder="or common name here!"
+                placeholder="common or latin name will do!"
               ></input>
             </fieldset>
           </div>
