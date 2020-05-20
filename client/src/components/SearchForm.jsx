@@ -12,7 +12,7 @@ order_by=
 */
 
 const SearchForm = (props) => {
-  //to keep track of what user is typing into search input
+  //to keep track of what is being typed into search form
   const [searchLocation, setSearchLocation] = useState("");
   const [searchState, setSearchState] = useState("");
   const [searchCounty, setSearchCounty] = useState("");
@@ -21,7 +21,10 @@ const SearchForm = (props) => {
   const [searchSeason, setSearchSeason] = useState("");
 
   const createSearch = (e) => {
+    // to stop page from reloading
     e.preventDefault();
+
+    // create new object with submitted form input
     const newSearch = {
       searchLocation,
       searchState,
@@ -30,8 +33,17 @@ const SearchForm = (props) => {
       searchTaxon,
       searchSeason,
     };
+
+    // print object in console -- useful in development to test onSubmit handler
     console.log(newSearch);
-    
+
+    // clear form after successful submission
+    setSearchLocation("");
+    setSearchState("");
+    setSearchCounty("");
+    setSearchMunicipality("");
+    setSearchTaxon("");
+    setSearchSeason("");
   };
 
   return (
