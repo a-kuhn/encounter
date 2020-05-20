@@ -30,6 +30,8 @@ const SearchForm = (props) => {
       searchTaxon,
       searchSeason,
     };
+    console.log(newSearch);
+    
   };
 
   return (
@@ -83,10 +85,9 @@ const SearchForm = (props) => {
                   onChange={(e) => setSearchSeason(e.target.value)}
                   class="form-check-input"
                   type="radio"
-                  name="thisSeason"
+                  name="searchSeason"
                   id="thisSeason"
                   value="thisSeason"
-                  checked
                 ></input>
                 <label class="form-check-label" for="thisSeason">
                   this season (&#177; 2 months from today)
@@ -99,7 +100,7 @@ const SearchForm = (props) => {
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
-                      name="springSeason"
+                      name="searchSeason"
                       id="springSeason"
                       value="springSeason"
                     ></input>
@@ -112,7 +113,7 @@ const SearchForm = (props) => {
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
-                      name="summerSeason"
+                      name="searchSeason"
                       id="summerSeason"
                       value="summerSeason"
                     ></input>
@@ -127,7 +128,7 @@ const SearchForm = (props) => {
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
-                      name="winterSeason"
+                      name="searchSeason"
                       id="winterSeason"
                       value="winterSeason"
                     ></input>
@@ -140,7 +141,7 @@ const SearchForm = (props) => {
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
                       type="radio"
-                      name="fallSeason"
+                      name="searchSeason"
                       id="fallSeason"
                       value="fallSeason"
                     ></input>
