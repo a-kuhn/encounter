@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Login = (props) => {
+export default (props) => {
   //to keep track of what user is typing into search input
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,4 +43,3 @@ const Login = (props) => {
   );
 };
 
-export default Login;

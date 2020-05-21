@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Nav from "../components/Nav";
 import Checklist from "../components/Checklist";
 
-function SingleChecklist() {
+export default () => {
   return (
     <>
       <div className="">
@@ -14,6 +14,4 @@ function SingleChecklist() {
       </div>
     </>
   );
-}
-
-export default SingleChecklist;
+};

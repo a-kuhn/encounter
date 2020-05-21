@@ -11,7 +11,7 @@ per_page=
 order_by=
 */
 
-const SearchForm = (props) => {
+export default (props) => {
   //to keep track of what is being typed into search form
   const [searchLocation, setSearchLocation] = useState("");
   const [searchState, setSearchState] = useState("");
@@ -186,5 +186,3 @@ const SearchForm = (props) => {
     </div>
   );
 };
-
-export default SearchForm;

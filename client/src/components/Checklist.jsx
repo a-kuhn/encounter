@@ -1,6 +1,6 @@
 import React from "react";
 
-function Checklist() {
+export default () => {
   return (
     <div className="container outline">
       <div className="sticky-top bg-light">
@@ -160,6 +160,4 @@ function Checklist() {
       </table>
     </div>
   );
-}
-
-export default Checklist;
+};

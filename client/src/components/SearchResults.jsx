@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchResults() {
+export default () => {
     return (
       <div className="container outline">
         <p className="">table with response from API call should be formated like:
@@ -24,6 +24,5 @@ function SearchResults() {
         </table>
       </div>
     );
-  }
+  };
 
-export default SearchResults;

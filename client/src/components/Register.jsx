@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Register = (props) => {
+export default (props) => {
   //to keep track of what user is typing into search input
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -77,5 +77,3 @@ const Register = (props) => {
     </div>
   );
 };
-
-export default Register;
