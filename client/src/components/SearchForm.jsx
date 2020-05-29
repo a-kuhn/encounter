@@ -11,7 +11,7 @@ per_page=
 order_by=
 */
 
-export default (props) => {
+export default () => {
   //to keep track of what is being typed into search form
   const [searchLocation, setSearchLocation] = useState("");
   const [searchState, setSearchState] = useState("");
@@ -92,7 +92,7 @@ export default (props) => {
           <div className="col-6">
             <fieldset className="border p-2">
               <legend className="w-auto">season</legend>
-              <div class="form-check text-center">
+              <div class="form-check text-center mb-3">
                 <input
                   onChange={(e) => setSearchSeason(e.target.value)}
                   class="form-check-input"
@@ -101,13 +101,13 @@ export default (props) => {
                   id="thisSeason"
                   value="thisSeason"
                 ></input>
-                <label class="form-check-label" for="thisSeason">
+                <label class="form-check-label ml-2" for="thisSeason">
                   this season (&#177; 2 months from today)
                 </label>
               </div>
               <div className="form-row px-4">
                 <div className="form-group col-md-6">
-                  <div class="form-check">
+                  <div class="form-check d-flex align-items-center">
                     <input
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
@@ -116,11 +116,11 @@ export default (props) => {
                       id="springSeason"
                       value="springSeason"
                     ></input>
-                    <label class="form-check-label" for="springSeason">
-                      spring
+                    <label class="form-check-label ml-2" for="springSeason">
+                      spring<br/>(March - May)
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div class="form-check mt-3 d-flex align-items-center">
                     <input
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
@@ -129,13 +129,13 @@ export default (props) => {
                       id="summerSeason"
                       value="summerSeason"
                     ></input>
-                    <label class="form-check-label" for="summerSeason">
-                      summer
+                    <label class="form-check-label ml-2" for="summerSeason">
+                      summer<br/>(June - Aug)
                     </label>
                   </div>
                 </div>
                 <div className="form-group col-md-6">
-                  <div class="form-check">
+                  <div class="form-check d-flex align-items-center">
                     <input
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
@@ -144,11 +144,11 @@ export default (props) => {
                       id="winterSeason"
                       value="winterSeason"
                     ></input>
-                    <label class="form-check-label" for="winterSeason">
-                      winter
+                    <label class="form-check-label ml-2" for="winterSeason">
+                      winter<br/>(Dec - Feb)
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div class="form-check mt-3 d-flex align-items-center">
                     <input
                       onChange={(e) => setSearchSeason(e.target.value)}
                       class="form-check-input"
@@ -157,8 +157,8 @@ export default (props) => {
                       id="fallSeason"
                       value="fallSeason"
                     ></input>
-                    <label class="form-check-label" for="fallSeason">
-                      fall
+                    <label class="form-check-label ml-2" for="fallSeason">
+                      fall<br/>(Sept - Nov)
                     </label>
                   </div>
                 </div>
