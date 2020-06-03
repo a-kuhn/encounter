@@ -15,10 +15,10 @@ export default () => {
       .get(searchString)
       .then((res)=> {
         setNewSearchResults(res.data);
-        console.log(res);
+        console.log(newSearchResults);
       })
       .catch((err)=>{
-        setErrors(err.response.data.errors);
+        // setErrors(err.response.data.errors);
         console.log(err.response.data.errors);
       });
   }
