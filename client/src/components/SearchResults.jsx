@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export default ({searchResults}) => {
     return (
       <div className="container outline">
         <p className="">table with response from API call should be formated like:

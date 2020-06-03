@@ -11,7 +11,7 @@ per_page=
 order_by=
 */
 
-export default () => {
+export default (props) => {
   //to keep track of what is being typed into search form
   const [searchLocation, setSearchLocation] = useState("");
   const [searchState, setSearchState] = useState("");
@@ -20,22 +20,27 @@ export default () => {
   const [searchTaxon, setSearchTaxon] = useState("");
   const [searchSeason, setSearchSeason] = useState("");
 
-  const createSearch = (e) => {
+  const handleSubmit = (e) => {
     // to stop page from reloading
     e.preventDefault();
 
-    // create new object with submitted form input
-    const newSearch = {
-      searchLocation,
-      searchState,
-      searchCounty,
-      searchMunicipality,
-      searchTaxon,
-      searchSeason,
-    };
+    // // create new object with submitted form input
+    // const newSearch = {
+    //   searchLocation,
+    //   searchState,
+    //   searchCounty,
+    //   searchMunicipality,
+    //   searchTaxon,
+    //   searchSeason,
+    // };
 
-    // print object in console -- useful in development to test onSubmit handler
-    console.log(newSearch);
+    // // print object in console -- useful in development to test onSubmit handler
+    // console.log(newSearch);
+
+    //create new searchString using submitted form input
+    //!  only including searchTaxon right now -- 
+    //*  build search string out once API and lifted state are working
+    const searchString = `http://api.inaturalist.org/v1/observations?taxon_name=${searchTaxon}&d1=1970&d2=now&iconic_taxa=Aves&order=desc&order_by=observed_on`;
 
     // clear form after successful submission
     setSearchLocation("");
@@ -44,11 +49,15 @@ export default () => {
     setSearchMunicipality("");
     setSearchTaxon("");
     setSearchSeason("");
+
+    //send searchString to NewChecklist for API call
+    props.onNewSearch(searchString);
+
   };
 
   return (
     <div className="container mt-5 ">
-      <form onSubmit={createSearch} className="form">
+      <form onSubmit={handleSubmit} className="form">
         <div className="row">
           <div className="col-6 d-flex align-items-stretch ">
             <fieldset className="border p-2 ">
