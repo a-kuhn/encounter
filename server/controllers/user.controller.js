@@ -3,32 +3,47 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 module.exports = {
-  register(req, res) {
-    const user = new User(req.body);
+  register: (req, res) => {
+    User.create(req.body)
+      .then((user) => {
+        //log user in after successful registration:
+        const userToken = jwt.sign(
+          {
+            id: user._id,
+          },
+          process.env.JWT_SECRET
+        );
 
-    user
-      .save()
-      .then(() => {
-        res.json({ msg: "success!", user: user });
+        res
+          .cookie("usertoken", userToken, secret, {
+            httpOnly: true,
+          })
+          .json({ msg: "success!", user: user });
       })
-      .catch((err) => res.status(400).json(err));
+      .catch((err) => res.json(err));
   },
 
   login(req, res) {
+    //check to see if user's email exists in db
     User.findOne({ email: req.body.email })
       .then((user) => {
         if (user === null) {
+          //if no email match in db:
           res.status(400).json({ msg: "invalid login attempt" });
         } else {
+          //if the user exists, check password:
           bcrypt
             .compare(req.body.password, user.password)
             .then((passwordIsValid) => {
               if (passwordIsValid) {
+                //sign in user with jwt.sign()
                 res
                   .cookie(
                     "usertoken",
                     jwt.sign({ _id: user._id }, process.env.JWT_SECRET),
                     {
+                      //to avoid additional configurations
+                      //okay in dev mode, but **not safe** for production
                       httpOnly: true,
                     }
                   )
@@ -43,15 +58,6 @@ module.exports = {
   },
 
   logout(req, res) {
-    res
-      .cookie("usertoken", jwt.sign({ _id: "" }, process.env.JWT_SECRET), {
-        httpOnly: true,
-        maxAge: 0,
-      })
-      .json({ msg: "ok" });
-  },
-
-  logout2(req, res) {
     res.clearCookie("usertoken");
     res.json({ msg: "usertoken cookie cleared" });
   },

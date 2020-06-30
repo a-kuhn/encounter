@@ -1,21 +1,19 @@
-const express = require("express");
-const cors = require("cors");
-const port = 8000;
-const db_name = "encounterDB";
+require("dotenv").config();
 
-require("./config/mongoose.config")(db_name);
+const express = require("express"),
+  cookieParser = require("cookie-parser"),
+  cors = require("cors");
+
+require("./config/mongoose.config")(process.env.DB_NAME);
 
 const app = express();
-app.use(cors());
 
-// req.body will be undefined without this
+app.use(cookieParser());
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 app.use(express.json());
 
-// long-form import routes function and execute
-// const exportedRoutesFunc = require("./routes/city.routes");
-// exportedRoutesFunc(app);
+require("./routes/user.routes")(app);
 
-// shorthand import routes function and execute
-require("./routes/encounter.routes")(app);
-
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(process.env.DB_PORT, () =>
+  console.log(`Listening on port ${process.env.DB_PORT}`)
+);
