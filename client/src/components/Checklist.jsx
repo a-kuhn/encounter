@@ -11,7 +11,7 @@ export default () => {
             SAVE UPDATES
           </button>
         </div>
-        <p className="">location notes --> textfield input</p>
+        <p className="">location notes -- textfield input</p>
       </div>
       <table className="table">
         <tr className="text-center">
@@ -23,139 +23,403 @@ export default () => {
           <th>delete</th>
         </tr>
         <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
         </tr>
         <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
-        </tr>        <tr className="text-center">
-          <td>☑️ | ✅</td>
-          <td>MM/DD/YYYY -->input box</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
+        </tr>{" "}
+        <tr className="text-center">
+          <td>
+            <span role="img" aria-label="checkbox">
+              ☑️
+            </span>{" "}
+            |{" "}
+            <span role="img" aria-label="checkbox">
+              ✅
+            </span>
+          </td>
+          <td>MM/DD/YYYY --input box</td>
           <td className="font-italic">Genus species</td>
           <td>bird name</td>
           <td>input text area</td>
-          <td> 🗑️</td>
+          <td>
+            {" "}
+            <span role="img" aria-label="trash">
+              🗑️
+            </span>
+          </td>
         </tr>
       </table>
     </div>
