@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios';
 
 export default (props) => {
   //to keep track of what user is typing into search input
@@ -7,6 +8,7 @@ export default (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
+  const [errors, setErrors] = useState({});
 
   const createUser = (e) => {
     e.preventDefault();
@@ -17,6 +19,25 @@ export default (props) => {
       password,
       passwordConfirm,
     };
+
+    axios
+      .post("http://localhost:3000/api/register", newUser, {
+        withCredentials: true,
+      })
+      .then((res) => {
+        console.log(res);
+
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPassword("");
+        setPasswordConfirm("");
+      })
+      .catch((err) => {
+        console.log(err);
+
+        setErrors(err.response.data.errors);
+      });
   };
 
   return (
